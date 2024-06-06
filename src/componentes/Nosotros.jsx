@@ -12,11 +12,9 @@ export default function Nosotros() {
         <div className="nosotro-info">
           <h2>Nosotros</h2>
           <p className="parrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta
-            aut facere sint quis qui, ab expedita assumenda in esse perferendis
-            debitis dolorem enim consequuntur odio illo animi veritatis? Nobis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <a className="button" href="">
+          <a className="button box" href="">
             contactar
           </a>
         </div>

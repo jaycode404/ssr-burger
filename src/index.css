@@ -38,6 +38,9 @@ html {
   margin: 0;
 }
 /* GENERAL----------------------------- */
+.preload .title {
+  display: none; /* Oculta el título mientras se cargan los estilos */
+}
 body {
   background-color: var(--primary-color);
   font-family: var(--primary-font);
@@ -51,10 +54,14 @@ section {
   text-align: center;
   margin: 2rem;
 }
+.box {
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
+}
 
 .button {
   padding: 0.5rem 1rem;
-  background-color: #b3a0cd;
+  background-color: var(--purple-color);
+  color:  var(--primary-color);
   border: #1e1e1e solid 3px;
   font-family: var(--secondary-font);
   text-transform: uppercase;
@@ -81,6 +88,19 @@ header {
   font-family: var(--secondary-font);
   text-align: center;
   font-size: 60px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+    transform: translateY(+20px); 
+  }
+  100% {
+    opacity: 1; 
+    transform: translateY(0);
+  }
 }
 
 .header-image {

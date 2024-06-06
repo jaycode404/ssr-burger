@@ -7,7 +7,7 @@ export default function Header() {
         <h1 className="header-title">LA MEJOR HAMBUGUESA DEL CONDADO</h1>
       </div>
       <div className="img-container">
-        <img className="header-image shadow" src="/public/assets/burger.png" alt="burger" />
+        <img className="header-image shadow" src="assets/burger.png" alt="burger" />
       </div>
     </header>
   );
