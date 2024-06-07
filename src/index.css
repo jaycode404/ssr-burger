@@ -54,6 +54,7 @@ a {
 section {
   text-align: center;
   margin: 2rem;
+  height: 90vh;
 }
 .box {
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
@@ -79,6 +80,15 @@ section {
   /* margin: 0 auto; */
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); 
   transition: transform 0.3s ease-in-out; /
+}
+.card {
+  width: auto;
+  height: auto;
+  max-height: 18rem;
+  
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: start;
 }
 /* NAVBAR----------------------------------- */
 .navbar {
@@ -174,20 +184,67 @@ header {
   text-transform: uppercase;
 }
 /* PLATILLOS------------------ */
+.section-title {
+  font-size: 90px;
+  /* font-family: var(--secondary-font); */
+  margin-bottom: 4rem;
+
+}
 .platillos-container {
-  height: 100vh;
+  
   display: flex;
   gap: 1rem;
 }
 .product-card {
   width: auto;
-  height: 18rem;
+  height: auto;
+  max-height: 18rem;
   background-color: #853636;
   border-radius: 10px;
+  padding: 1rem;
+  text-align: start;
   }
 .product-card:nth-child(odd) {
   margin-top: 3rem; 
 }
 .product-img{
-  width: 10rem;
+  display: flex;
+  width: 8rem;
+  margin: 0 auto;
+}
+.product-name {
+  margin-bottom: 1rem;
+}
+.product-desc {
+  font-size: 12px;
+  line-height: 1.5;
+}
+/*CLIENTES --------------------- */
+.review-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.rev-card p{
+  width: 70%;
+}
+.rev-card:nth-child(even) {
+  margin-top: 2rem;
+}
+.rev-card {
+  text-align: start;
+  height: auto;
+  max-height: 18rem;
+  width: auto;
+  padding: 1rem;
+  background-color: var(--green-color);
+  color: var(--primary-color);
+}
+
+.clientes-discurso {
+  font-size: 20px;
+  font-weight: var(--large-weight);
+  line-height: 2;
+  margin-top: 2rem;
+  
 }

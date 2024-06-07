@@ -3,6 +3,7 @@ import Navbar from "./componentes/Navbar";
 import Header from "./componentes/Header";
 import Nosotros from "./componentes/Nosotros";
 import Platillos from "./componentes/Platillos";
+import Clientes from "./componentes/Clientes";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <Nosotros />
           <Platillos/>
+          <Clientes/>
         </Suspense>
       </main>
     </>

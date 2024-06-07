@@ -36,6 +36,8 @@ const hamburguesas = [
 
 export default function Platillos() {
   return <section id="platillos">
+
+    <h2 className="section-title">Platillos Estrella ✦</h2>
     <div className="platillos-container">
       {hamburguesas.map((hamburguesa, index) => {
         const {nombre, rate, img, descripcion} = hamburguesa
