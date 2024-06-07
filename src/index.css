@@ -54,7 +54,8 @@ a {
 section {
   text-align: center;
   margin: 2rem;
-  height: 90vh;
+  height: auto;
+  margin-bottom: 4rem;
 }
 .box {
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */

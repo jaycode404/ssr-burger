@@ -19,6 +19,14 @@ const ssrManifest = isProduction
 // Create http server
 const app = express()
 
+// Middleware for cache control headers
+app.use((req, res, next) => {
+  if (req.url.endsWith('.css') || req.url.endsWith('.js')) {
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+  }
+  next()
+})
+
 // Add Vite or respective production middlewares
 let vite
 if (!isProduction) {
@@ -33,7 +41,14 @@ if (!isProduction) {
   const compression = (await import('compression')).default
   const sirv = (await import('sirv')).default
   app.use(compression())
-  app.use(base, sirv('./dist/client', { extensions: [] }))
+  app.use(base, sirv('./dist/client', {
+    extensions: [],
+    setHeaders: (res, pathname) => {
+      if (pathname.endsWith('.css') || pathname.endsWith('.js')) {
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+      }
+    }
+  }))
 }
 
 // Serve HTML

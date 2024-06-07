@@ -42,7 +42,7 @@ export default function Platillos() {
       {hamburguesas.map((hamburguesa, index) => {
         const {nombre, rate, img, descripcion} = hamburguesa
         return(
-          <div className="product-card">
+          <div className="product-card shadow">
             <img className="product-img" src={`${img}`} alt="" />
             <h3 className="product-name">{nombre}</h3>
             <p className="product-desc">{descripcion}</p>

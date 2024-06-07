@@ -10,7 +10,7 @@ export default function Nosotros() {
           </p>
         </div>
         <div className="nosotro-info">
-          <h2>Nosotros</h2>
+          <h2>¿Nosotros?</h2>
           <p className="parrafo">
             Simplemente somos fan de nuestro sazón y queremos llevar a tu
             paladar lo que provoca cada mordida de nuestro platillo
