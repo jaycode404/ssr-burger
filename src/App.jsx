@@ -4,6 +4,7 @@ import Header from "./componentes/Header";
 import Nosotros from "./componentes/Nosotros";
 import Platillos from "./componentes/Platillos";
 import Clientes from "./componentes/Clientes";
+import Contacto from "./componentes/Contacto";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Nosotros />
           <Platillos/>
           <Clientes/>
+          <Contacto/>
         </Suspense>
       </main>
     </>
